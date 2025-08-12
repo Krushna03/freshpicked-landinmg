@@ -79,28 +79,35 @@ export default function LandingPage() {
       content: "So convenient! I can order fresh vegetables during my lunch break and pick them up on my way home.",
       rating: 5,
     },
+    {
+      name: "Anita Patel",
+      role: "Working Professional",
+      content: "So convenient! I can order fresh vegetables during my lunch break and pick them up on my way home.",
+      rating: 5,
+    },
   ]
 
   return (
     <div className="min-h-screen bg-gradient-to-b from-green-50 to-white">
       {/* Header */}
       <header className="bg-white/80 backdrop-blur-md border-b border-green-100 sticky top-0 z-50">
-        <div className="container mx-auto px-4 py-4">
+        <div className="container mx-auto px-4 md:px-2 lg:px-12 py-2">
           <div className="flex items-center justify-between">
             <div className="flex items-center space-x-2">
-              <div className="bg-green-600 p-2 rounded-lg">
-                <Leaf className="h-6 w-6 text-white" />
-              </div>
-              <span className="text-2xl font-bold text-gray-900">Fresh Picked</span>
+              <img src="logo.jpg" alt="logo" className="rounded-xl h-14 w-14" />
+              <span className="text-2xl font-bold text-gray-900">FreshPicked</span>
             </div>
             <nav className="hidden md:flex items-center space-x-8">
-              <a href="#features" className="text-gray-700 hover:text-green-600 transition-colors">
+              <a href="#home" className="text-gray-700 hover:text-green-600 transition-colors font-medium">
+                Home
+              </a>
+              <a href="#features" className="text-gray-700 hover:text-green-600 transition-colors font-medium">
                 Features
               </a>
-              <a href="#how-it-works" className="text-gray-700 hover:text-green-600 transition-colors">
+              <a href="#how-it-works" className="text-gray-700 hover:text-green-600 transition-colors font-medium">
                 How It Works
               </a>
-              <a href="#testimonials" className="text-gray-700 hover:text-green-600 transition-colors">
+              <a href="#testimonials" className="text-gray-700 hover:text-green-600 transition-colors font-medium">
                 Reviews
               </a>
               <Button className="bg-green-600 hover:bg-green-700">Download App</Button>
@@ -110,12 +117,12 @@ export default function LandingPage() {
       </header>
 
       {/* Hero Section */}
-      <section className="py-20 px-4">
+      <section id="home" className="py-20 px-4">
         <div className="container mx-auto text-center">
           <div
             className={`transition-all duration-1000 ${isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-10"}`}
           >
-            <Badge className="bg-green-100 text-green-800 mb-6 px-4 py-2">🥬 Fresh • Local • Direct</Badge>
+            <Badge className="bg-green-100 hover:bg-green-200 cursor-pointer select-none text-green-800 mb-6 px-4 py-2">🥬 Fresh • Local • Direct</Badge>
             <h1 className="text-5xl md:text-7xl font-bold text-gray-900 mb-6 leading-tight">
               Your Local
               <span className="text-green-600 block">Vegetable Marketplace</span>
@@ -128,20 +135,18 @@ export default function LandingPage() {
             {/* App Download Buttons */}
             <div className="flex flex-col sm:flex-row gap-4 justify-center items-center mb-12">
               <Button
-                size="lg"
-                className="bg-black hover:bg-gray-800 text-white px-8 py-4 rounded-xl flex items-center space-x-3"
+                className="bg-black hover:bg-gray-800 text-white px-6 py-7 rounded-xl flex items-center space-x-3"
               >
-                <Apple className="h-6 w-6" />
+                <Apple className="h-8 w-8" />
                 <div className="text-left">
                   <div className="text-xs">Download on the</div>
                   <div className="text-lg font-semibold">App Store</div>
                 </div>
               </Button>
               <Button
-                size="lg"
-                className="bg-green-600 hover:bg-green-700 text-white px-8 py-4 rounded-xl flex items-center space-x-3"
+                className="bg-green-600 hover:bg-green-700 text-white px-6 py-7 rounded-xl flex items-center space-x-2"
               >
-                <Play className="h-6 w-6" />
+                <Play className="h-8 w-8" />
                 <div className="text-left">
                   <div className="text-xs">Get it on</div>
                   <div className="text-lg font-semibold">Google Play</div>
@@ -203,7 +208,7 @@ export default function LandingPage() {
             </p>
           </div>
 
-          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+          <div className="grid md:grid-cols-2 gap-8 md:max-w-5xl sm:mx-auto">
             {features.map((feature, index) => (
               <Card
                 key={index}
@@ -223,7 +228,7 @@ export default function LandingPage() {
       </section>
 
       {/* How It Works Section */}
-      <section id="how-it-works" className="py-20 px-4 bg-green-50">
+      <section id="how-it-works" className="py-20 px-4 md:px-20 bg-green-50">
         <div className="container mx-auto">
           <div className="text-center mb-16">
             <h2 className="text-4xl font-bold text-gray-900 mb-4">How It Works</h2>
@@ -233,7 +238,7 @@ export default function LandingPage() {
           <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
             {steps.map((step, index) => (
               <div key={index} className="text-center relative">
-                <div className="bg-green-600 text-white w-16 h-16 rounded-full flex items-center justify-center text-2xl font-bold mx-auto mb-4 shadow-lg">
+                <div className="bg-green-600 text-white w-16 h-16 rounded-full flex items-center justify-center cursor-pointer select-none text-2xl font-bold mx-auto mb-4 shadow-lg">
                   {step.step}
                 </div>
                 <h3 className="text-xl font-semibold text-gray-900 mb-2">{step.title}</h3>
@@ -277,7 +282,7 @@ export default function LandingPage() {
             </p>
           </div>
 
-          <div className="grid md:grid-cols-3 gap-8">
+          <div className="grid md:grid-cols-2 gap-8 md:max-w-6xl mx-auto">
             {testimonials.map((testimonial, index) => (
               <Card key={index} className="border-green-100 hover:shadow-lg transition-shadow duration-300">
                 <CardContent className="p-6">
@@ -308,20 +313,18 @@ export default function LandingPage() {
 
           <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
             <Button
-              size="lg"
-              className="bg-white text-green-600 hover:bg-gray-100 px-8 py-4 rounded-xl flex items-center space-x-3"
+              className="bg-white text-green-600 hover:bg-gray-100 px-6 py-7 rounded-xl flex items-center space-x-3"
             >
-              <Apple className="h-6 w-6" />
+              <Apple className="h-8 w-8" />
               <div className="text-left">
                 <div className="text-xs">Download on the</div>
                 <div className="text-lg font-semibold">App Store</div>
               </div>
             </Button>
             <Button
-              size="lg"
-              className="bg-black hover:bg-gray-800 text-white px-8 py-4 rounded-xl flex items-center space-x-3"
+              className="bg-black hover:bg-gray-800 text-white px-6 py-7 rounded-xl flex items-center space-x-2"
             >
-              <Play className="h-6 w-6" />
+              <Play className="h-8 w-8" />
               <div className="text-left">
                 <div className="text-xs">Get it on</div>
                 <div className="text-lg font-semibold">Google Play</div>
@@ -332,17 +335,15 @@ export default function LandingPage() {
       </section>
 
       {/* Footer */}
-      <footer className="bg-gray-900 text-white py-12 px-4">
+      <footer className="bg-gray-900 text-white py-12 px-4 md:px-16">
         <div className="container mx-auto">
           <div className="grid md:grid-cols-4 gap-8">
             <div>
               <div className="flex items-center space-x-2 mb-4">
-                <div className="bg-green-600 p-2 rounded-lg">
-                  <Leaf className="h-6 w-6 text-white" />
-                </div>
-                <span className="text-2xl font-bold">Fresh Picked</span>
+                <img src="logo.jpg" alt="logo" className="rounded-xl h-14 w-14" />
+                <span className="text-2xl font-bold">FreshPicked</span>
               </div>
-              <p className="text-gray-400">Connecting communities through fresh, local vegetables.</p>
+              <p className="text-gray-400">Connecting communities through fresh, <br /> local vegetables.</p>
             </div>
 
             <div>
