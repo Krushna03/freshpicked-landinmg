@@ -52,11 +52,6 @@ export default function LandingPage() {
       title: "Chat & Negotiate",
       description: "Connect with buyers/sellers through our chat feature",
     },
-    {
-      step: "04",
-      title: "Complete Transaction",
-      description: "Finalize your deal and enjoy fresh, local vegetables",
-    },
   ]
 
   const testimonials = [
@@ -185,7 +180,7 @@ export default function LandingPage() {
                         <div className="w-8 h-8 bg-green-200 rounded-full"></div>
                         <div>
                           <div className="text-sm font-medium">Fresh Tomatoes</div>
-                          <div className="text-xs text-gray-500">₹40/kg • 2km away</div>
+                          <div className="text-xs text-gray-500">$40/kg • 2km away</div>
                         </div>
                       </div>
                     </div>
@@ -194,7 +189,7 @@ export default function LandingPage() {
                         <div className="w-8 h-8 bg-green-200 rounded-full"></div>
                         <div>
                           <div className="text-sm font-medium">Organic Spinach</div>
-                          <div className="text-xs text-gray-500">₹30/kg • 1km away</div>
+                          <div className="text-xs text-gray-500">$30/kg • 1km away</div>
                         </div>
                       </div>
                     </div>
@@ -243,7 +238,7 @@ export default function LandingPage() {
             <p className="text-xl text-gray-600 max-w-2xl mx-auto">Get started in just a few simple steps</p>
           </div>
 
-          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
             {steps.map((step, index) => (
               <div key={index} className="text-center relative">
                 <div className="bg-green-600 text-white w-16 h-16 rounded-full flex items-center justify-center cursor-pointer select-none text-2xl font-bold mx-auto mb-4 shadow-lg">
@@ -265,15 +260,15 @@ export default function LandingPage() {
         <div className="container mx-auto">
           <div className="grid md:grid-cols-3 gap-8 text-center text-white">
             <div>
-              <div className="text-4xl font-bold mb-2">10,000+</div>
+              <div className="text-4xl font-bold mb-2">1,000+</div>
               <div className="text-green-100">Happy Users</div>
             </div>
             <div>
-              <div className="text-4xl font-bold mb-2">5,000+</div>
+              <div className="text-4xl font-bold mb-2">500+</div>
               <div className="text-green-100">Products Listed</div>
             </div>
             <div>
-              <div className="text-4xl font-bold mb-2">50+</div>
+              <div className="text-4xl font-bold mb-2">5+</div>
               <div className="text-green-100">Cities Covered</div>
             </div>
           </div>
@@ -400,7 +395,7 @@ export default function LandingPage() {
           </div>
 
           <div className="border-t border-gray-800 mt-8 pt-8 text-center text-gray-400">
-            <p>&copy; 2024 Fresh Picked. All rights reserved.</p>
+            <p>&copy; 2025 FreshPicked. All rights reserved.</p>
           </div>
         </div>
       </footer>
