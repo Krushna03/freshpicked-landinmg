@@ -110,7 +110,11 @@ export default function LandingPage() {
               <a href="#testimonials" className="text-gray-700 hover:text-green-600 transition-colors font-medium">
                 Reviews
               </a>
-              <Button className="bg-green-600 hover:bg-green-700">Download App</Button>
+              <Button className="bg-green-600 hover:bg-green-700">
+                <a href="https://play.google.com/store/apps/details?id=com.freshpicked.app" target="_blank">
+                  Download App
+                </a>
+              </Button>
             </nav>
           </div>
         </div>
@@ -134,24 +138,28 @@ export default function LandingPage() {
 
             {/* App Download Buttons */}
             <div className="flex flex-col sm:flex-row gap-4 justify-center items-center mb-12">
-              <Button
-                className="bg-black hover:bg-gray-800 text-white px-6 py-7 rounded-xl flex items-center space-x-3"
-              >
-                <Apple className="h-8 w-8" />
-                <div className="text-left">
-                  <div className="text-xs">Download on the</div>
-                  <div className="text-lg font-semibold">App Store</div>
-                </div>
-              </Button>
-              <Button
-                className="bg-green-600 hover:bg-green-700 text-white px-6 py-7 rounded-xl flex items-center space-x-2"
-              >
-                <Play className="h-8 w-8" />
-                <div className="text-left">
-                  <div className="text-xs">Get it on</div>
-                  <div className="text-lg font-semibold">Google Play</div>
-                </div>
-              </Button>
+              <a href="https://play.google.com/store/apps/details?id=com.freshpicked.app" target="_blank">
+                {/* <Button
+                  className="bg-black hover:bg-gray-800 text-white px-6 py-7 rounded-xl flex items-center space-x-3"
+                >
+                    <Apple className="h-8 w-8" />
+                    <div className="text-left">
+                      <div className="text-xs">Download on the</div>
+                      <div className="text-lg font-semibold">App Store</div>
+                    </div>
+                </Button> */}
+              </a>
+              <a href="https://play.google.com/store/apps/details?id=com.freshpicked.app" target="_blank">
+                <Button
+                  className="bg-green-600 hover:bg-green-700 text-white px-6 py-7 rounded-xl flex items-center space-x-2"
+                >
+                    <Play className="h-8 w-8" />
+                    <div className="text-left">
+                      <div className="text-xs">Get it on</div>
+                      <div className="text-lg font-semibold">Google Play</div>
+                    </div>
+                </Button>
+              </a>
             </div>
 
             {/* Hero Image/Phone Mockup */}
@@ -312,24 +320,26 @@ export default function LandingPage() {
           </p>
 
           <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
-            <Button
-              className="bg-white text-green-600 hover:bg-gray-100 px-6 py-7 rounded-xl flex items-center space-x-3"
-            >
-              <Apple className="h-8 w-8" />
-              <div className="text-left">
-                <div className="text-xs">Download on the</div>
-                <div className="text-lg font-semibold">App Store</div>
-              </div>
-            </Button>
-            <Button
-              className="bg-black hover:bg-gray-800 text-white px-6 py-7 rounded-xl flex items-center space-x-2"
-            >
-              <Play className="h-8 w-8" />
-              <div className="text-left">
-                <div className="text-xs">Get it on</div>
-                <div className="text-lg font-semibold">Google Play</div>
-              </div>
-            </Button>
+            <a href="https://play.google.com/store/apps/details?id=com.freshpicked.app" target="_blank">
+              {/* <Button
+                className="bg-white text-green-600 hover:bg-gray-100 px-6 py-7 rounded-xl flex items-center space-x-3"
+              >
+                <Apple className="h-8 w-8" />
+                <div className="text-left">
+                  <div className="text-xs">Download on the</div>
+                  <div className="text-lg font-semibold">App Store</div>
+                </div>
+              </Button> */}
+              <Button
+                className="bg-black hover:bg-gray-800 text-white px-6 py-7 rounded-xl flex items-center space-x-2"
+              >
+                <Play className="h-8 w-8" />
+                <div className="text-left">
+                  <div className="text-xs">Get it on</div>
+                  <div className="text-lg font-semibold">Google Play</div>
+                </div>
+              </Button>
+            </a>
           </div>
         </div>
       </section>
@@ -348,7 +358,7 @@ export default function LandingPage() {
 
             <div>
               <h3 className="text-lg font-semibold mb-4">Features</h3>
-              <ul className="space-y-2 text-gray-400">
+              <ul className="space-y-2 text-gray-400 cursor-pointer select-none">
                 <li>Buy Vegetables</li>
                 <li>Sell Produce</li>
                 <li>Location-Based</li>
@@ -358,7 +368,7 @@ export default function LandingPage() {
 
             <div>
               <h3 className="text-lg font-semibold mb-4">Support</h3>
-              <ul className="space-y-2 text-gray-400">
+              <ul className="space-y-2 text-gray-400 cursor-pointer select-none">
                 <li>Help Center</li>
                 <li>Contact Us</li>
                 <li>Privacy Policy</li>
@@ -369,20 +379,22 @@ export default function LandingPage() {
             <div>
               <h3 className="text-lg font-semibold mb-4">Download</h3>
               <div className="space-y-3">
-                <Button
+                {/* <Button
                   variant="outline"
                   className="w-full justify-start text-gray-400 border-gray-700 hover:bg-gray-800 bg-transparent"
                 >
                   <Apple className="h-5 w-5 mr-2" />
                   App Store
-                </Button>
-                <Button
-                  variant="outline"
-                  className="w-full justify-start text-gray-400 border-gray-700 hover:bg-gray-800 bg-transparent"
-                >
-                  <Play className="h-5 w-5 mr-2" />
-                  Google Play
-                </Button>
+                </Button> */}
+                <a href="https://play.google.com/store/apps/details?id=com.freshpicked.app" target="_blank">
+                  <Button
+                    variant="outline"
+                    className="w-full justify-start text-gray-400 border-gray-700 hover:bg-gray-800 bg-transparent"
+                  >
+                    <Play className="h-5 w-5 mr-2" />
+                    Google Play
+                  </Button>
+                </a>
               </div>
             </div>
           </div>
