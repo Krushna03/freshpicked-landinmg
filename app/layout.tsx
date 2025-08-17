@@ -5,6 +5,9 @@ export const metadata: Metadata = {
   title: 'FreshPicked',
   description: 'FreshPicked',
   generator: 'FreshPicked',
+  icons: {
+    icon: "/logo.jpg",
+  },
 }
 
 export default function RootLayout({

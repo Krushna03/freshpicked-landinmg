@@ -56,29 +56,29 @@ export default function LandingPage() {
 
   const testimonials = [
     {
-      name: "Priya Sharma",
+      name: "Lone Wolves",
       role: "Home Cook",
       content:
         "Fresh Picked has revolutionized how I buy vegetables. The quality is amazing and I love supporting local farmers!",
-      rating: 5,
+      rating: 4,
     },
     {
-      name: "Rajesh Kumar",
+      name: "Crew Zorix",
       role: "Vegetable Farmer",
       content: "I can now sell directly to customers without middlemen. My income has increased significantly!",
-      rating: 5,
+      rating: 3,
     },
     {
-      name: "Anita Patel",
+      name: "Riverstone Crew",
       role: "Working Professional",
       content: "So convenient! I can order fresh vegetables during my lunch break and pick them up on my way home.",
-      rating: 5,
+      rating: 3,
     },
     {
-      name: "Anita Patel",
+      name: "Redwood Alliance",
       role: "Working Professional",
       content: "So convenient! I can order fresh vegetables during my lunch break and pick them up on my way home.",
-      rating: 5,
+      rating: 4,
     },
   ]
 
