@@ -16,23 +16,23 @@ export default function LandingPage() {
   const features = [
     {
       icon: <ShoppingCart className="h-8 w-8 text-green-600" />,
-      title: "Buy Fresh Vegetables",
-      description: "Browse and purchase fresh vegetables from local sellers in your area",
+      title: "Fresher, Tastier Produce",
+      description: "Enjoy produce picked at peak ripeness for maximum flavor and nutrition.",
     },
     {
       icon: <Store className="h-8 w-8 text-green-600" />,
-      title: "Sell Your Produce",
-      description: "List your own vegetables and reach customers in your neighborhood",
+      title: "Healthier, Locally Grown",
+      description: "Support sustainable farms and small growers while fueling your body with nutrient-rich produce that hasn’t traveled thousands of miles.",
     },
     {
       icon: <MapPin className="h-8 w-8 text-green-600" />,
-      title: "Location-Based Listings",
-      description: "Find products nearby or explore listings from your entire region",
+      title: "Connect with Your Community",
+      description: "Meet the growers in your neighborhood, build real connections, and discover unique produce varieties you won’t find in big-box stores.",
     },
     {
       icon: <MessageCircle className="h-8 w-8 text-green-600" />,
-      title: "Direct Chat",
-      description: "Negotiate prices and arrange purchases through built-in messaging",
+      title: "Reduce Food Waste",
+      description: "Buy exactly what you need, directly from farmers, helping them sell surplus harvests and cutting down on unnecessary waste.",
     },
   ]
 
@@ -44,13 +44,13 @@ export default function LandingPage() {
     },
     {
       step: "02",
-      title: "Browse or List",
-      description: "Buy fresh vegetables or list your own produce for sale",
+      title: "Browse, List & Chat",
+      description: "Explore items, list your own, and connect directly with sellers",
     },
     {
       step: "03",
-      title: "Chat & Negotiate",
-      description: "Connect with buyers/sellers through our chat feature",
+      title: "Meet Up",
+      description: "Connect with people right in your neighborhood.",
     },
   ]
 
@@ -82,6 +82,8 @@ export default function LandingPage() {
     },
   ]
 
+  
+
   return (
     <div className="min-h-screen bg-gradient-to-b from-green-50 to-white">
       {/* Header */}
@@ -97,7 +99,7 @@ export default function LandingPage() {
                 Home
               </a>
               <a href="#features" className="text-gray-700 hover:text-green-600 transition-colors font-medium">
-                Features
+                About
               </a>
               <a href="#how-it-works" className="text-gray-700 hover:text-green-600 transition-colors font-medium">
                 How It Works
@@ -123,12 +125,12 @@ export default function LandingPage() {
           >
             <Badge className="bg-green-100 hover:bg-green-200 cursor-pointer select-none text-green-800 mb-6 px-4 py-2">🥬 Fresh • Local • Direct</Badge>
             <h1 className="text-5xl md:text-7xl font-bold text-gray-900 mb-6 leading-tight">
-              Your Local
-              <span className="text-green-600 block">Vegetable Marketplace</span>
+            The Digital 
+              <span className="text-green-600 block">Farmer’s Market</span>
             </h1>
-            <p className="text-xl text-gray-600 mb-8 max-w-2xl mx-auto leading-relaxed">
-              Buy fresh vegetables from local sellers or sell your own produce. Connect directly with your community
-              through our easy-to-use mobile app.
+            <p className="text-xl text-gray-600 mb-8 max-w-lg mx-auto leading-relaxed">
+            Buy and Sell Homegrown Produce and Homemade goods within your
+            community.
             </p>
 
             {/* App Download Buttons */}
@@ -180,7 +182,7 @@ export default function LandingPage() {
                         <div className="w-8 h-8 bg-green-200 rounded-full"></div>
                         <div>
                           <div className="text-sm font-medium">Fresh Tomatoes</div>
-                          <div className="text-xs text-gray-500">$40/kg • 2km away</div>
+                          <div className="text-xs text-gray-500">$40/lb • 2mi away</div>
                         </div>
                       </div>
                     </div>
@@ -189,7 +191,7 @@ export default function LandingPage() {
                         <div className="w-8 h-8 bg-green-200 rounded-full"></div>
                         <div>
                           <div className="text-sm font-medium">Organic Spinach</div>
-                          <div className="text-xs text-gray-500">$30/kg • 1km away</div>
+                          <div className="text-xs text-gray-500">$30/lb • 1mi away</div>
                         </div>
                       </div>
                     </div>
@@ -205,9 +207,9 @@ export default function LandingPage() {
       <section id="features" className="py-20 px-4 bg-white">
         <div className="container mx-auto">
           <div className="text-center mb-16">
-            <h2 className="text-4xl font-bold text-gray-900 mb-4">Why Choose Fresh Picked?</h2>
+            <h2 className="text-4xl font-bold text-gray-900 mb-3">Why Choose Fresh Picked?</h2>
             <p className="text-xl text-gray-600 max-w-2xl mx-auto">
-              Experience the future of vegetable shopping with our innovative marketplace
+              Meet your neighbors, eat better, and shop local
             </p>
           </div>
 
@@ -225,31 +227,6 @@ export default function LandingPage() {
                   <p className="text-gray-600">{feature.description}</p>
                 </CardContent>
               </Card>
-            ))}
-          </div>
-        </div>
-      </section>
-
-      {/* How It Works Section */}
-      <section id="how-it-works" className="py-20 px-4 md:px-20 bg-green-50">
-        <div className="container mx-auto">
-          <div className="text-center mb-16">
-            <h2 className="text-4xl font-bold text-gray-900 mb-4">How It Works</h2>
-            <p className="text-xl text-gray-600 max-w-2xl mx-auto">Get started in just a few simple steps</p>
-          </div>
-
-          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-            {steps.map((step, index) => (
-              <div key={index} className="text-center relative">
-                <div className="bg-green-600 text-white w-16 h-16 rounded-full flex items-center justify-center cursor-pointer select-none text-2xl font-bold mx-auto mb-4 shadow-lg">
-                  {step.step}
-                </div>
-                <h3 className="text-xl font-semibold text-gray-900 mb-2">{step.title}</h3>
-                <p className="text-gray-600">{step.description}</p>
-                {index < steps.length - 1 && (
-                  <ArrowRight className="hidden lg:block absolute top-8 -right-4 h-6 w-6 text-green-400" />
-                )}
-              </div>
             ))}
           </div>
         </div>
@@ -275,8 +252,33 @@ export default function LandingPage() {
         </div>
       </section>
 
+      {/* How It Works Section */}
+      <section id="how-it-works" className="py-36 px-4 md:px-20 bg-green-50">
+        <div className="container mx-auto">
+          <div className="text-center mb-16">
+            <h2 className="text-4xl font-bold text-gray-900 mb-3">Download and Register</h2>
+            <p className="text-xl text-gray-600 max-w-2xl mx-auto">Get started in just a few simple steps</p>
+          </div>
+
+          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+            {steps.map((step, index) => (
+              <div key={index} className="text-center relative">
+                <div className="bg-green-600 text-white w-16 h-16 rounded-full flex items-center justify-center cursor-pointer select-none text-2xl font-bold mx-auto mb-4 shadow-lg">
+                  {step.step}
+                </div>
+                <h3 className="text-xl font-semibold text-gray-900 mb-2">{step.title}</h3>
+                <p className="text-gray-600">{step.description}</p>
+                {index < steps.length - 1 && (
+                  <ArrowRight className="hidden lg:block absolute top-8 -right-4 h-6 w-6 text-green-400" />
+                )}
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
       {/* Testimonials Section */}
-      <section id="testimonials" className="py-20 px-4 bg-white">
+      {/* <section id="testimonials" className="py-20 px-4 bg-white">
         <div className="container mx-auto">
           <div className="text-center mb-16">
             <h2 className="text-4xl font-bold text-gray-900 mb-4">What Our Users Say</h2>
@@ -304,7 +306,7 @@ export default function LandingPage() {
             ))}
           </div>
         </div>
-      </section>
+      </section> */}
 
       {/* CTA Section */}
       <section className="py-20 px-4 bg-gradient-to-r from-green-600 to-green-700">
@@ -384,7 +386,7 @@ export default function LandingPage() {
                 <a href="https://play.google.com/store/apps/details?id=com.freshpicked.app" target="_blank">
                   <Button
                     variant="outline"
-                    className="w-full justify-start text-gray-400 border-gray-700 hover:bg-gray-800 bg-transparent"
+                    className="w-full justify-start text-gray-400 border-gray-700 hover:bg-gray-800 hover:text-white bg-transparent"
                   >
                     <Play className="h-5 w-5 mr-2" />
                     Google Play
