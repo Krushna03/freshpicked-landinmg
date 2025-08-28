@@ -104,9 +104,9 @@ export default function LandingPage() {
               <a href="#how-it-works" className="text-gray-700 hover:text-green-600 transition-colors font-medium">
                 How It Works
               </a>
-              <a href="#testimonials" className="text-gray-700 hover:text-green-600 transition-colors font-medium">
+              {/* <a href="#testimonials" className="text-gray-700 hover:text-green-600 transition-colors font-medium">
                 Reviews
-              </a>
+              </a> */}
               <Button className="bg-green-600 hover:bg-green-700">
                 <a href="https://play.google.com/store/apps/details?id=com.freshpicked.app" target="_blank">
                   Download App
